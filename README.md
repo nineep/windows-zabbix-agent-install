@@ -1,14 +1,17 @@
 # 目的
-已有一批windows服务器，需要装上zabbix agent获取显卡监控指标 
-这批服务器没有集中的账户管理和其他下发工具，但是知道admin用户密码   
+已有一批windows服务器，需要装上zabbix agent获取显卡监控指标，      
+这批服务器没有集中的账户管理和其他下发工具，但是知道admin用户密码。    
 
-*确保windows服务器 135，445端口打开，供net use连接远程windows*
+*确保windows服务器 135，445端口打开，供net use连接远程windows*      
+
+*配置zabbix时，将config-zabbix打包为exe文件，传到远程windows执行配置*     
 
 # python安装zabbix
 
-## 本地安装python
+## 下载安装python
 
-    python-3.7.7-amd64.exe
+    https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe
+
 
 ## 修改host文件
 
